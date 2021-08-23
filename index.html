@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperatur</title>
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box">
+            <div class="title-app">Temperature Convertion</div>
+            <div class="date" id="date"></div>
+            <div class="time" id="time"></div>
+            <div class="dropdown-container">
+                <div class="option">
+                    <select id="from" name="from" onchange="select()">
+                        <option value="hide">Pilih Temperatur</option>
+                        <option value="celcius">Celcius</option>
+                        <option value="reaumur">Reaumur</option>
+                        <option value="farentheit">Farentheit</option>
+
+                    </select>
+                </div>
+                <div>KE</div>
+                <div class="option">
+                    <select id="to" name="to" onchange="select()">
+                        <option value="hide">Pilih Temperatur</option>
+
+                        <option value="celcius">Celcius</option>
+                        <option value="reaumur">Reaumur</option>
+                        <option value="farentheit">Farentheit</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input id="value" type="number" onkeypress="validate(event)" placeholder="Masukkan Angka"
+                    onkeyup="calculate()" />
+            </div>
+            <div class="result" id="result">0</div>
+
+            <div class="colorbg">
+                <select id="bg" name="bg" onchange="changebg()">
+                    <option value="hide">Pilih Background</option>
+    
+                    <option value="0">Ungu</option>
+                    <option value="1">Biru</option>
+                    <option value="2">Pink</option>
+                </select>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

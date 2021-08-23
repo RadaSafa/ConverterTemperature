@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* fallback for old browsers */
+  font-family: 'Lato', sans-serif;
+  background: #8f37ae;
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .box {
+  margin-top: 3em;
+  width: 512px;
+  border: 2px solid #e5c2f2;
+  padding: 2em;
+  border-radius: 8px;
+}
+
+.container .box .title-app {
+  font-size: 2em;
+  text-align: center;
+  color: white;
+}
+
+.container .box .date {
+  text-align: center;
+  margin-top: 1em;
+  color: #656466;
+}
+
+.container .box .time {
+  text-align: center;
+  margin-top: 1em;
+  color: #656466;
+}
+
+.container .box .dropdown-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .box .dropdown-container .option {
+  color: #656466;
+}
+
+.container .box .dropdown-container .option select {
+  width: 200px;
+  height: 35px;
+  color: #656466;
+  border-radius: 4px;
+}
+
+.container .box .input-container {
+  margin-top: 3em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+}
+
+.container .box .input-container input {
+  width: 100%;
+  height: 35px;
+  border-radius: 4px;
+  outline: none;
+  border-width: 0px;
+  border: none;
+  padding-left: 1em;
+}
+
+.container .box .result {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 1em;
+  color: white;
+}
+
+.container .box .colorbg {
+  margin-top: 2em;
+  padding-left: 1em;
+}
+
+.container .box .colorbg select {
+  width: 200px;
+  height: 35px;
+  color: #656466;
+}
+/*# sourceMappingURL=styles.css.map */
